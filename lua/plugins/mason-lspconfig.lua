@@ -1,8 +1,8 @@
 return {
-        "williamboman/mason-lspconfig.nvim",
-        config = function()
-            require("mason-lspconfig").setup({
-               ensure_installed = { "lua_ls" }
-            })
-        end
+	"williamboman/mason-lspconfig.nvim",
+	config = function()
+		require("mason-lspconfig").setup({
+			ensure_installed = { "lua_ls", "zls", "clangd" },
+		})
+	end,
 }
